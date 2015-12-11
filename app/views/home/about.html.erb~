@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Primary School  a Educational Category Flat Bootstarp Resposive Website Template | About:: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Primary School Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />	
+<script src="js/jquery.min.js"> </script>
+<!--webfonts-->
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic|PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<!--//webfonts-->
+</head>
+<body>
+	<!--start-home-->
+	<!----- start-header---->
+			<div id="home" class="header two">
+					<div class="top-header two">	
+						<div class="container">
+						<div class="logo">
+							<a href="index"><h1>LITTLE SOLDIER<span>School</span></h1></a>
+						</div>
+					<div class="top-menu">
+							<span class="menu"> </span>
+								<ul class="cl-effect-16">
+								 <li><a href="index" data-hover="Home">Home</a></li>
+								<li><a class="active"  href="about" data-hover="About">About</a></li>
+								<li><a href="teachers" data-hover="Teachers">Teachers</a></li>
+								<li><a href="gallery" data-hover="Gallery">Gallery</a></li>
+								<!--<li><a href="404" data-hover="blog">Blog</a></li>-->
+								<li><a href="contact" data-hover="Contact">Contact</a></li>
+								  <div class="clearfix"></div>
+								</ul>
+							</div>
+							<!-- script-for-menu -->
+								<script>
+									$("span.menu").click(function(){
+										$(".top-menu ul").slideToggle("slow" , function(){
+										});
+									});
+								</script>
+								<!-- script-for-menu -->
+							<div class="clearfix"> </div>
+					</div>
+				</div>
+			    <div class="clearfix"> </div>
+		</div>
+<!----- //End-slider---->
+<!---start-slide-bottom--->
+			<div class="about-section">
+				 <div class="container">
+
+				     <div class="about-head">
+							<h3>About Us</h3>
+							<p>A Few words about us</p>
+					 </div>
+			<div class="row">
+				      	<div class="col-xs-6 slide-about">
+
+									<div class="side">
+										 <div  id="top" class="callbacks_container">
+												<div><ul class="rslides" id="slider4>
+														</li>
+														<li>
+														<img src="assets/s2.jpg" class="img-responsive" alt="" />
+														</li>
+														<li>
+		<img src="assets/s1.jpg" class="img-responsive" alt="" />
+														</li>
+													 </ul></div>
+												</div>
+											</div>
+								<script src="js/responsiveslides.min.js"></script>
+							 <script>
+								// You can also use "$(window).load(function() {"
+								$(function () {
+								  // Slideshow 4
+								  $("#slider4").responsiveSlides({
+									auto: true,
+									pager:false,
+									nav: true,
+									speed: 500,
+									namespace: "callbacks",
+									before: function () {
+									  $('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+									  $('.events').append("<li>after event fired.</li>");
+									}
+								  });
+							
+								});
+							  </script>
+							<!-//End-slider-script-->
+						<div class="clearfix"> </div>
+					</div>
+<div class="col-xs-6 about-text">
+					    <p><b>LITTLE SOLDIER</b> is established in 1992 at D-6 HIG colony A.B Road behind press complex which is in the main city, easily approchable and a very safe locality with safe transport facility, with a vision to provide strong foundation of inspiring next generation citizens of india.</p>
+						 <p>The little ones find a home outside their home as we provide a homely ambience at our school. This instills a sense of security in the children who could otherwise feel uncomfortable in the unknown surroundings of a new environment.</p>
+						<span>Our curriculum aims at sharpening and developing the skills required for all round personal development of the child. The concept of education in our school is <b><i>"learning while playing"</i></b></span>
+
+					</div></div>
+					<div class="clearfix"></div>
+				 </div></div>
+			</div>
+
+<!-start-slide-bottom-->
+		<div class="slide-bottom">
+			<div class="slide-bottom-grids">
+				 <div class="container">
+					<div class="row">
+					 <div class="col-md-6 slide-bottom-grid">
+							<h3>Welcome!</h3>
+							<p><i>Little Soldiers, a pre-school was born with the desire to nurture the child and lay a foundation for a learned society.Let them be LITTLE
+								fill their hearts with LAUGHTER
+								help them grow WINGS, nurture their sense of WONDER,inspire them to BELIEVE, LOVE them like there's no Tomorrow.</i></p>
+					 </div>
+					 <div class="col-md-6 slide-bottom-grid">
+					       <h3>Our Mission</h3>
+						   <p><i>To be a leader in Preschool Education and Daycare, provide children “a home-away-from-home“ to give them “best-in-class” environment to optimize their Potential. We at Little Soldier School aims at an all round development of the students in our school.</i></p>
+					 </div></div>
+					 <div class="clearfix"></div>  
+				 </div></div>
+			 </div>
+
+<div class="member-section">
+			<div class="container">
+				<div class="member-head">
+						<h3>Our Members</h3>
+					   <p>2015 Board Members</p>
+					   </div>
+			      <div class="members">
+<p>                                                 
+					   <div class="col-xs-4 member-grids">
+                              <a href="#"> <img src="assets/m2.jpg" class="img-responsive" alt="" /></a>
+								<h5>President</h5>
+								<p></p>
+							</div>
+
+							<div class="col-xs-4 member-grids">
+								<a href="#"> <img src="assets/m3.jpg" class="img-responsive" alt="" /></a>
+								<h5>Vice President</h5>
+								<p></p>
+
+							</div>
+							<div class="col-xs-4 member-grids">
+								<a href="#"> <img src="assets/m1.jpg" class="img-responsive" alt="" /></a>
+								<h5>Chief of Staff</h5>
+								<p></p>
+							</div>
+</p> 
+							<div class="clearfix"> </div>
+					   </div>
+				  </div>
+			</div>
+		</div>
+<!--/mid-bg-->
+	<div class="mid-bg">
+		<div class="container">
+			<div class="mid-section">
+				 <h3>First Day at School!</h3>
+				 <h4>ARE YOU READY ?</h4>
+				 <p></p>
+			</div>
+		</div>
+	</div>

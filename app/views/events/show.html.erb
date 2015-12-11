@@ -1,0 +1,22 @@
+<br><br>
+<center>
+<font color="green"><p id="notice"><%= notice %></p></font>
+
+	<div class="panel panel-default" style="margin-left:60px; margin-right:60px; ">
+		<div class="panel-body" >
+		<br><br>
+<p>
+  <strong><i>Event Name:</i></strong>
+  <%= @event.ename %>
+</p>
+<br>
+<p>
+  <strong><i>Event Description:</i></strong>
+  <%= @event.edesc %>
+</p>
+<br>
+</div>
+</div>
+<button><%= link_to 'Edit', edit_event_path(@event) %></button>   
+<button><%= link_to 'Back', events_path %></button>
+</center>

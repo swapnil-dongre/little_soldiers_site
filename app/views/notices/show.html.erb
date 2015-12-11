@@ -1,0 +1,22 @@
+<br><br>
+<center>
+	<font color="green"><p id="notice"><%= notice %></p></font>
+
+	<div class="panel panel-default" style="margin-left:60px; margin-right:60px; ">
+		<div class="panel-body" >
+		<br><br>
+<p>
+  <strong><i>Notice Title:</i></strong>
+  <%= @notice.title %>
+</p>
+<br>
+<p>
+  <strong><i>Notice Body:</i></strong>
+  <%= @notice.body %>
+</p>
+<br>
+</div>
+</div>
+<button><%= link_to 'Edit', edit_notice_path(@notice) %> </button>
+<button><%= link_to 'Back', notices_path %></button>
+</center>

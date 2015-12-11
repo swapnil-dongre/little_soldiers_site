@@ -1,0 +1,13 @@
+<% if current_user %> 
+  
+     
+    <h3 style="margin-left:90% ; "><%= link_to "Log out", logout_path, method: "delete" %></h3> 
+  
+
+<% end %> 
+<div >
+	<br><br><br><br><br>
+	<center><button><h2><%= link_to 'Upcoming Event', new_event_path %></h2></button></center>
+	<br><br><br><br>
+	<center><button><h2><%= link_to 'News & Notices', new_notice_path %></h2></button></center>
+</div>

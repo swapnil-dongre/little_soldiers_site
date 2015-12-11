@@ -1,0 +1,53 @@
+<%= form_for(@notice, :html => { :class => 'form-horizontal'}) do |f| %>
+  <% if @notice.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@notice.errors.count, "error") %> prohibited this notice from being saved:</h2>
+
+      <ul>
+      <% @notice.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="tab-content">  
+    <div role="tabpanel" class="panel panel-primary tab-pane active" style="margin-top:20px;margin-left:50px;margin-right:50px;" >
+        <div class="panel-heading input-lg" style="background-color: #003366;">
+            <h4> New Notice </h4>
+        </div>  
+        <!-- Panel-head -->
+        
+        <div class="panel-body">
+    <div class="form-group">
+          <!-- title -->
+          <div class="col-sm-2 label-control">      
+          
+          <%= f.label :Notice_title %>
+          </div>
+          <div class="col-sm-8">
+          <%= f.text_field :title ,:placeholder => "Enter Notice Title", :class => 'form-control', :autofocus => true, :required => true %><br>
+          </div>
+    </div>
+  
+    <div class="form-group">
+          <!-- Event desc -->
+          <div class="col-sm-2 label-control"> 
+          <%= f.label :Notice_Details%>
+          </div>
+          <div class="col-sm-8">
+          <%= f.text_area :body, :placeholder => "Enter Notice Details", :class => 'form-control', :autofocus => true, :required => true  %><br>
+        </div>
+    </div>
+
+     
+  <div class="form-group">     
+          <div class="control-group">
+            <!-- Button -->
+            <div class="controls span7 text-center">
+              <button class="btn btn-success">Submit</button>
+              <%= button_tag "Reset", type: :reset, :class => "btn btn-success" %>
+            </div>
+          </div>
+        </div>
+<% end %>

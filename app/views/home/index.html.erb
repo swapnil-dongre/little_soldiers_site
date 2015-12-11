@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>LittleSoldiersSite</title>
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Primary School Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />	
+<script src="js/jquery.min.js"> </script>
+<!--webfonts-->
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic|PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="box.css">
+<script type="text/javascript" src="box.js"></script>
+</head>
+<body>
+	
+	<div id="home" class="header">
+
+					<div class="top-header">
+						
+  
+						<div class="container">
+						<div class="logo">
+							<a href="/"><h1>LITTLE SOLDIERS <span>School</span></h1></a>
+                <br><br><br>
+<div id="news" style="background-color: blue; height: 460px; width:200px;">
+	 <div class="panel panel-default">
+                    <div class="panel-heading" >
+                        <h4><b>NOTICES</b></h4>
+                    </div>
+                    <div class="panel-body" style="opacity:0.8; max-height: 400; min-height: 400px; background-color: black;">
+                        <% @notices.each do |notice| %>
+                        <ul>
+                            <li class="reason"><font color="yellow"><%= notice.title %></font></li></br>
+                        </ul>
+                        <% end %>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+<a href="#" style="background-color: yellow;">NEWS</a>
+
+						</div>
+						<script>
+						$('a').click(function(){
+    $('#news').animate({width: 'toggle'});
+});
+						</script>
+						
+
+							
+        
+					<div class="top-menu">
+							<span class="menu"> </span>
+
+								<ul class="cl-effect-16">
+									<ul class="nav nav-pills">
+								 <li role="presentation"><a class="active" href="/" data-hover="Home">Home</a></li>
+
+
+								<li role="presentation"><a  href="about" data-hover="About">About</a></li>
+								<li role="presentation"><a href="evnt" data-hover="Events">Events</a></li>
+								<li role="presentation"><a href="gallery" data-hover="Gallery">Gallery</a></li>
+								<!--<li><a href="404" data-hover="blog">Blog</a></li>-->
+								<li role="presentation"><a href="contact" data-hover="Contact">Contact</a></li>
+								  <div class="clearfix"></div>
+								</ul>
+							</ul>
+							</div>
+
+							<br><br><br> <br><br><br>
+
+   
+
+
+
+<!--- banner Slider starts Here --->
+	  			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			          nav:false,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+
+	<div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <div class="slider-top">
+			          		<h2>Knowledge is Power</h2>
+							<p>Knowledge is power. You can't begin a career, for that matter even a relationship, 								unless you know everything there is to know about it  You can't begin a career, for 								that matter even a relationship, unless you know everything there is to know about 								it..</p>
+							<h6>Welcoming for every Child</h6>
+			          </div>
+			        </li>
+			        <li>
+			        <div class="slider-top">
+			          		<h2>Perfect Education</h2>
+							<p>Knowledge is power. You can't begin a career, for that matter even a relationship, 								unless you know everything there is to know about it  You can't begin a career, for 								that matter even a relationship, unless you know everything there is to know about it..</p>
+							<h6>Welcoming for every Child</h6>
+			          </div>
+			        </li>
+			        <li>
+			           <div class="slider-top">
+			          		<h2>School Education</h2>
+							<p>Knowledge is power. You can't begin a career, for that matter even a relationship, unless you know everything there is to know about it  You can't begin a career, for that matter even a relationship, unless you know everything there is to know about it..</p>
+							<h6>Welcoming for every Child</h6>
+			          </div>
+			        </li>
+					<li>
+			           <div class="slider-top">
+			          	    <h2>Perfect Education</h2>
+							<p>Knowledge is power. You can't begin a career, for that matter even a relationship, unless you know everything there is to know about it  You can't begin a career, for that matter even a relationship, unless you know everything there is to know about it..</p>
+							<h6>Welcoming for every Child</h6>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+
+</div></div></div>
+<!--start-slide-bottom-->
+		<div class="slide-bottom">
+			<div class="slide-bottom-grids">
+				 <div class="container">
+					 <div class="col-md-6 slide-bottom-grid">
+							<h3>Welcome!</h3>
+							<p>Little Soldiers, a pre-school was born with the desire to nurture the child and lay a foundation for a learned society.Let them be LITTLE
+								fill their hearts with LAUGHTER
+								help them grow WINGS, nurture their sense of WONDER,inspire them to BELIEVE, LOVE them like there's no Tomorrow.</p>
+					 </div>
+					 <div class="col-md-6 slide-bottom-grid">
+					       <h3>Our Mission</h3>
+						   <p>To be a leader in Preschool Education and Daycare, provide children “a home-away-from-home“ to give them “best-in-class” environment to optimize their Potential. We at Little Soldier School aims at an all round development of the students in our school.</p>
+					 </div>
+					   <div class="clearfix"></div>
+				 </div>
+			 </div>
+		</div>
+<!--services-->
+
+<div class="service-section">
+		<div class="row">
+				<div class="col-xs-6 service-section-grids">
+						<div class="container">
+							
+						  <div class="serve-head">
+							  <h3>Our Activities</h3>
+							  <h6><i>Our Bestservices for your Kids</i></h6>
+						  </div>
+					 </div>
+						<div class="service-grid">
+							<div class="service-section-grid">
+								<div class="icon">
+									<i class="book"> </i>
+								</div>
+								<div class="icon-text">
+									<h4>APART FROM ACADEMICS</h4>
+									<p><i>Dance, Karate and Various games.</i></p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="service-section-grid">
+								<div class="icon">
+									<i class="pencil"> </i>
+								</div>
+								<div class="icon-text">
+									<h4>VARIOUS COMPETITIONS</h4>
+									<p><i>Rhymes Conversation, Fancy Dress, Sports, Drawing, Dance, Story telling and Dramatics.</i></p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="service-section-grid">
+								<div class="icon">
+									<i class="award"> </i>
+								</div>
+								<div class="icon-text">
+									<h4>OUTDOOR ACTIVITIES</h4>
+									<p><i>Picnics, Excursions, Visits to Zoo.</i></p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						</div>
+					<div class="col-xs-6 service-text">
+						  <p><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br></p>
+					</div></div>
+				 <div class="clearfix"> </div>
+			</div>
+		
+</body>
+</html>
