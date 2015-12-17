@@ -6,11 +6,12 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     @events = Event.all
+    
     @notices = Notice.all
   end
   def emain
-    @events = Event.all
-    @notices = Notice.all
+    @events = Event.all.reverse
+    @notices = Notice.all.reverse
   end
   def modify
   end

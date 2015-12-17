@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :admissions
   resources :notices
   resources :events
   
@@ -18,6 +19,7 @@ Rails.application.routes.draw do
   #   resources :products
     get '/' => 'home#index'
     get '/about' => 'home#about'
+    get '/admision' => 'admissions#admission'
     get '/contact' => 'home#contact'
     get '/gallery' => 'home#gallery'
     get '/admin' => 'events#modify'

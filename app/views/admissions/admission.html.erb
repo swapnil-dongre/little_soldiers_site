@@ -1,0 +1,179 @@
+<div class="container" style="margin-top:10px;margin-left:30px; background-color:">
+ 	
+			<div class="row">	
+				<div class="col-xs-2 " style= "color: #f1f1f1;
+margin: 0 auto 10px auto;background-color: #3266ad;
+padding: 5px 10px;
+border: 1px solid #fafafa;border-radius: 15px;">
+				
+					<center><h3 style="text-transform: capitalize;">Programs</h3></center>
+					
+				
+				<hr style="border-top: 2px dotted yellow"/>
+				<nav>
+  <ul class="nav nav-pills nav-stacked span2" style="text-transform: capitalize; margin-left:10px;">
+    <li><a href="#" style="color:white" onMouseOver="this.style.color='red'"
+   onMouseOut="this.style.color='white'">Playgroup</a></li>
+    <li><a href="#" style="color:white" onMouseOver="this.style.color='red'"
+   onMouseOut="this.style.color='white'">Nursery</a></li>
+    <li><a href="#" style="color:white" onMouseOver="this.style.color='red'"
+   onMouseOut="this.style.color='white'">LKG/KG-1</a></li>
+    <li><a href="#" style="color:white" onMouseOver="this.style.color='red'"
+   onMouseOut="this.style.color='white'">UKG/KG-2</a></li>
+  </ul>
+</nav>
+				</div>
+				<div class ="col-xs-6 " style="margin-left:10px">
+					<h2 style="text-transform: capitalize; color:red"><b>Admission Process</b></h2>
+					
+					<br>
+
+
+					<h4 style="text-transform: capitalize"><b>Documents Required:</b></h4>
+					<ul style="text-transform: capitalize;margin-left:30px">
+						<li>Photocopy of child's birth certificate</li>
+						<li>Two Passport size photographs of the child</li>
+					</ul>
+
+                <div style="border:1px solid ;background-color:black"><marquee style="text-transform: capitalize; color:#39FF14"><i>"NO REGISTRATION FEE, NO CAUTION MONEY !!"</marquee></div><br>
+				<center><h4 style="text-transform: capitalize"><b>Admission Criteria</b></h4></center>	
+                 <hr style="border-top: 2px dotted grey"/>
+                 <h4>Child must be between 2-5 years of age to take admission in the below levels:</h4>
+                 <br>
+                 
+            
+                 	
+                 <table class="admission table table-striped" style="width:50%;float:left; border-left: 4px solid #fafafa;border-top: 4px solid #fafafa; border-bottom: 4px solid #fafafa;">
+					    <thead>
+					      <tr >
+					        <th style="background-color:green;border-top-left-radius: 20px;text-transform: uppercase"><center>Level</center></th>
+					        
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr>
+					        <td ><center>Playgroup</center></td>
+					        
+					      
+					      </tr>
+					      <tr>
+					        <td ><center>Nursery</center></td>
+					       
+					        
+					      </tr>
+					      <tr>
+					        <td ><center>LKG/KG-1</center></td>
+					        
+					        
+					      </tr>
+					      <tr>
+					        <td ><center>UKG/KG-2</center></td>
+					        
+					        
+					      </tr>
+					    </tbody>
+				</table>
+					  
+					  
+				<table class="admission table table-striped" style="width:50%; border-right: 4px solid #fafafa;border-top: 4px solid #fafafa; border-bottom: 4px solid #fafafa; border-left: 1px solid #fafafa;">
+					    <thead>
+					      <tr>
+					        <th style="background-color:green;border-top-right-radius: 20px;text-transform: uppercase"><center>Age Group</center></th>
+					        
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr>
+					        <td><center>2 & 2+</center></td>
+					        
+					      
+					      </tr>
+					      <tr>
+					        <td><center>3 & 3+</center></td>
+					       
+					        
+					      </tr>
+					      <tr>
+					        <td><center>4 & 4+</center></td>
+					        
+					        
+					      </tr>
+					      <tr>
+					        <td><center>5 & 5+</center></td>
+					        
+					        
+					      </tr>
+					    </tbody>
+				</table>
+					  
+			
+
+
+				</div>
+
+				<div class ="col-xs-3 " style= "color: black;
+margin: 0 auto 10px auto;background-color: red;
+
+border: 1px solid #fafafa;border-radius: 15px;">
+					<h2 style="text-transform: capitalize;">Admission form </h2>
+					<hr style="border-top: 2px dotted yellow"/>
+					<%= form_for(@admission) do |f| %>
+					  <% if @admission.errors.any? %>
+					    <div id="error_explanation">
+					      <h2><%= pluralize(@admission.errors.count, "error") %> prohibited this admission from being saved:</h2>
+
+					      <ul>
+					      <% @admission.errors.full_messages.each do |message| %>
+					        <li><%= message %></li>
+					      <% end %>
+					      </ul>
+					    </div>
+					  <% end %>
+
+					  <div class="form-group " >
+					    
+					    <%= f.text_field :sname,:class => 'form-control ',:placeholder => "Enter Student Name",:id => "tf" ,  :required => true  %>
+					  </div>
+					  <div class="form-group ">
+					    
+					    <%= f.text_field :pname ,:class => 'form-control input-sm',:placeholder => "Enter Father's/Mother's Name",:id => "inputsm" ,:id => "tf" ,  :required => true %>
+					  </div>
+					  <div class="form-group ">
+					    
+					    <%= f.date_select :dob,:placeholder => "Select" %>
+					  </div>
+					  <div class="form-group ">
+					    
+					    <%= f.text_field :address,:class => 'form-control input-sm',:placeholder => "Enter Address",:id => "inputsm" ,:id => "tf" ,  :required => true  %>
+					  </div>
+					  <div class="form-group ">
+					    
+					    <%= f.text_field :city,:class => 'form-control input-sm',:placeholder => "Enter City",:id => "inputsm" ,:id => "tf" ,  :required => true  %>
+					  </div>
+					  <div class="form-group ">
+					    
+					    <%= f.text_field :bldgrp,:class => 'form-control input-sm',:placeholder => "Enter Child's Blood Group",:id => "inputsm" ,:id => "tf" ,  :required => true  %>
+					  </div>
+					  <div class="form-group ">
+					    
+					    <%= f.text_field :course,:class => 'form-control input-sm',:placeholder => "Enter Course Name",:id => "inputsm" ,:id => "tf" ,  :required => true %>
+					  </div>
+					  <div class="form-group ">
+					    
+					    <%= f.number_field :contact,:class => 'form-control input-sm',:placeholder => "Enter Contact No.",:id => "inputsm" ,:id => "tf" ,  :required => true  %>
+					  </div><br>
+					  <div class="form-group">     
+          <div class="control-group">
+            <!-- Button -->
+            <div class="controls span7 text-center" >
+              <button  class="btn btn-success">SUBMIT</button>
+              <%= button_tag "RESET", type: :reset, :class => "btn btn-success"  %>
+            </div>
+          </div>
+        </div>
+					  <br>
+					<% end %>
+
+				</div>
+			</div>
+		</div>
