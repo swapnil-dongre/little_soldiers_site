@@ -20,10 +20,16 @@ Rails.application.routes.draw do
     get '/' => 'home#index'
     get '/about' => 'home#about'
     get '/admision' => 'admissions#admission'
+    get '/admision/playgroup' => 'admissions#playgroup'
+    get '/admision/nursery' => 'admissions#nursery'
+    get '/admision/lkg' => 'admissions#lkg'
+    get '/admision/ukg' => 'admissions#ukg'
+    get '/admision/school essentials' => 'admissions#scessential'
     get '/contact' => 'home#contact'
     get '/gallery' => 'home#gallery'
     get '/admin' => 'events#modify'
     get '/evnt' => 'events#emain'
+    get '/developers' => 'home#developers'
    resources :homes
 
   # Example resource route with options:

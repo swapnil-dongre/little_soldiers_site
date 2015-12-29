@@ -8,7 +8,7 @@ class CreateAdmissions < ActiveRecord::Migration
       t.string :city
       t.string :bldgrp
       t.string :course
-      t.integer :contact
+      t.number :contact
 
       t.timestamps null: false
     end

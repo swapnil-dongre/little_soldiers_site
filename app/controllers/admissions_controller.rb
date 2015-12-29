@@ -1,6 +1,7 @@
 class AdmissionsController < ApplicationController
+  before_action :require_user, only: [:index,:destroy]
   before_action :set_admission, only: [:show, :edit, :update, :destroy]
-
+  layout "adlayout", except: [:index, :show,:new]
   # GET /admissions
   # GET /admissions.json
   def index
@@ -10,6 +11,21 @@ class AdmissionsController < ApplicationController
   # GET /admissions/1
   # GET /admissions/1.json
   def admission
+    @admission = Admission.new
+  end
+  def playgroup
+    @admission = Admission.new
+  end
+   def nursery
+    @admission = Admission.new
+  end
+   def lkg
+    @admission = Admission.new
+  end
+   def ukg
+    @admission = Admission.new
+  end
+  def scessential
     @admission = Admission.new
   end
   def show

@@ -20,13 +20,13 @@
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('assets/im6.JPG');"></div>
+                <div class="fill" style="background-image:url('assets/1.JPG');"></div>
                 <div class="carousel-caption">
                     
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('assets/IMG_0080.JPG');"></div>
+                <div class="fill" style="background-image:url('assets/2.JPG');"></div>
                 <div class="carousel-caption">
                     
                 </div>
@@ -53,45 +53,59 @@
                 </h1>
             </div>
             <div class="col-md-4" >
-            <div class="panel panel-info" >
-                    <div class="panel-heading">
-                        <h4><b>NOTICES</b></h4>
-                    </div>
-                    <div class="panel-body" style="margin-left:10px; max-height: 250px; min-height: 250px; overflow: auto;">
-                        <% @notices.each do |notice| %>
-                        <ul>
-                            <li class="reason"><%= notice.title %><p class="reasonText"><%= notice.body %></p></li></br>
-                        </ul>
-                        <% end %>
-                        
-                    </div>
-                </div>
+            <div style= "color: #f1f1f1;margin: 0 auto 10px auto;background-color: #FF9999;padding: 2px 5px;border: 1px solid #fafafa;border-radius: 15px;max-height: 300px; min-height: 300px;position: relative;overflow: hidden;" >
+                
+                    <center><h3 style="text-transform: capitalize;">Notices</h3></center>
+                    
+                
+                <hr style="border-top: 2px dotted yellow"/>
+                <marquee direction="down" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();"><% @notices.each do |notice| %>
+                
+                  <ul  style="text-transform: capitalize; margin-left:10px;">
+                   <font color= "black"><li ><h5><%= notice.body %></h5></li></font></br>
+                    <hr style="border-top: 2px solid white"/>
+                  </ul>
+              
+              <% end %></marquee>
             </div>
+        </div>
+
+
                 <div class="col-md-4">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <h4><b>UPCOMING EVENTS</b></h4>
+                    <div style= "color: #f1f1f1;max-height: 100px; min-height: 100px;background-color: #8FBC8F;border: 1px solid #8FBC8F;border-top-left-radius: 15px;border-top-right-radius: 15px;">
+                       <center><h3 style="text-transform: capitalize;">Upcoming Events</h3></center>
+                    
+                
+                <hr style="border-top: 2px dotted yellow"/> 
                     </div>
-                    <div class="panel-body" style="margin-left:10px; max-height: 250px; min-height: 250px; overflow: auto;">
-                        <% @events.each do |event| %>
-                        <ul>
-                            <li class="reason"><%= event.ename %><p class="reasonText"><%= event.edesc %></p></li></br>
+                    <div style= "color: #f1f1f1;max-height: 200px; min-height: 200px;overflow:auto;background-color: #8FBC8F;border-bottom-left-radius: 15px;position:relative">
+                
+                    
+                <nav>
+                    <% @events.each do |event| %>
+                        <ul class="nav nav-pills nav-stacked span2" style="text-transform: capitalize; margin-left:10px;">
+                            <a data-toggle="collapse" href="#collapse1"><li class="reason"><%= event.ename %><p class="reasonText"><%= event.edesc %></p></li> </a></br>
                         </ul>
                         <% end %>
                         
-                    </div>
-                </div>
+                  </nav>
+            </div>
             </div>
             <div class="col-md-4">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <h4><b>REGULAR EVENTS</b></h4>
-                    </div>
-                    <div class="panel-body" style="margin-left:10px; max-height: 250px; min-height: 250px; overflow: auto;">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        
-                    </div>
-                </div>
+                <div style= "color: #f1f1f1;margin: 0 auto 10px auto;background-color:#CC99FF ;padding: 5px 10px;border: 1px solid #fafafa;border-radius: 15px;max-height: 300px; min-height: 300px;position: relative;overflow: hidden;">
+                
+                    <center><h3 style="text-transform: capitalize;">Regular Events</h3></center>
+                    
+                <hr style="border-top: 2px dotted yellow"/>
+                <marquee direction="up" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();"><% @notices.each do |notice| %>
+                
+                  <ul  style="text-transform: capitalize; margin-left:10px;">
+                   <font color= "black"><li ><h5><%= notice.body %></h5></li></font></br>
+                    <hr style="border-top: 2px solid white"/>
+                  </ul>
+              
+              <% end %></marquee>
+            </div>
             </div>
         </div>
         <!-- /.row -->
@@ -122,3 +136,4 @@ $('.reason').on('click', function() {
 </script>
 
 
+<br>

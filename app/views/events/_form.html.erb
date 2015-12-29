@@ -45,15 +45,14 @@
                 <%= f.label :Event_Date %>
               </div>
               <div class="col-sm-8">
-                <%= f.text_field(:edate, :placeholder => "Select Event Date" ,:'data-behaviour' => 'datepicker', :class => "form-control fa fa-calendar")%><br>
+                <%= f.text_field :edate, :placeholder => "Select Event Date" ,:'data-behaviour' => 'datepicker', :class => "form-control fa fa-calendar" ,:id => "datepicker"%><br>
                                 
                 <script type="text/javascript">
-                  $('[data-behaviour=datepicker]').datepicker({
-                    "format": "yyyy-mm-dd",
-                    "weekStart": 1,  
-                    "maxDate" : 0,                  
-                    "autoclose": true
-                    }).on('changeDate', function(e) {});
+                 
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  
                 </script>
 
               </div>
@@ -61,7 +60,7 @@
   <div class="form-group">     
           <div class="control-group">
             <!-- Button -->
-            <div class="controls span7 text-center" style="color:black">
+            <div class="controls span7 text-center" >
               <button class="btn btn-success">Submit</button>
               <%= button_tag "Reset", type: :reset, :class => "btn btn-success" %>
             </div>

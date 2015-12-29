@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>LittleSoldiersSite</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Primary School Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />	
+<script src="js/jquery.min.js"> </script>
+<!--webfonts-->
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic|PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="box.css">
+<script type="text/javascript" src="box.js"></script>
+
+
+</head>
+<body>
+  <!--start-home-->
+  <!----- start-header---->
+  
+      <div id="home" class="header two">
+          <div class="top-header two"> 
+          
+            <div class="container">
+            <div class="logo">
+              <a href="/"><h1 style="text-transform:capitalize">Little Soldier<span>School</span></h1></a>
+            </div>
+          <div class="top-menu">
+              <span class="menu"> </span>
+                <ul class="cl-effect-16">
+                 <ul class="nav nav-pills">
+                 <li role="presentation"><a  href="/" data-hover="Home">Home</a></li>
+
+
+                <li role="presentation"><a href="/about" data-hover="About">About</a></li>
+                <li role="presentation"><a href="/admision" data-hover="Admissions">Admissions</a></li>
+                <li role="presentation"><a href="/evnt" data-hover="Events">Events</a></li>
+                <li role="presentation"><a href="/gallery" data-hover="Gallery">Gallery</a></li>
+                <!--<li><a href="404" data-hover="blog">Blog</a></li>-->
+                <li role="presentation"><a href="/contact" data-hover="Contact">Contact</a></li>
+                  <div class="clearfix"></div>
+                </ul>
+                </ul>
+              </div>
+              <!-- script-for-menu -->
+                <script>
+                  $("span.menu").click(function(){
+                    $(".top-menu ul").slideToggle("slow" , function(){
+                    });
+                  });
+                </script>
+                <!-- script-for-menu -->
+              <div class="clearfix"> </div>
+          </div>
+        </div>
+          <div class="clearfix"> </div>
+    </div>
+
+
+    <!--admission layout -->
+<div  style="margin-top:10px;margin-left:30px; position:relative">
+ 	
+			<div class="row">	
+				<div class="col-xs-2 " >
+					<div style= "color: #f1f1f1;margin: 0 auto 10px auto;background-color: #3266ad;padding: 5px 10px;border: 1px solid #fafafa;border-radius: 15px;">
+				
+					<center><h3 style="text-transform: capitalize;">Programs</h3></center>
+					
+				
+				<hr style="border-top: 2px dotted yellow"/>
+				<nav>
+				  <ul class="nav nav-pills nav-stacked span2" style="text-transform: capitalize; margin-left:10px;">
+				    <li><a href="/admision/playgroup" style="color:white" onMouseOver="this.style.color='red'"
+				   onMouseOut="this.style.color='white'">Playgroup</a></li>
+				    <li><a href="/admision/nursery" style="color:white" onMouseOver="this.style.color='red'"
+				   onMouseOut="this.style.color='white'">Nursery</a></li>
+				    <li><a href="/admision/lkg" style="color:white" onMouseOver="this.style.color='red'"
+				   onMouseOut="this.style.color='white'">LKG/KG-1</a></li>
+				    <li><a href="/admision/ukg" style="color:white" onMouseOver="this.style.color='red'"
+				   onMouseOut="this.style.color='white'">UKG/KG-2</a></li>
+				  </ul>
+				</nav>
+			</div>
+			<div style= "color: #f1f1f1;margin: 0 auto 10px auto;background-color: #3266ad;padding: 5px 10px;border: 1px solid #fafafa;border-radius: 15px;position :relative;margin-top:40px">
+				<ul class="nav nav-pills nav-stacked span2" style="text-transform: capitalize; margin-left:10px;">
+					<li><a href="/admision/school essentials" style="color:white" onMouseOver="this.style.color='red'"
+				   onMouseOut="this.style.color='white'">School Essentials</a></li>
+				</ul>
+				</div>
+		</div>
+
+			<div class ="col-xs-6 " style="margin-left:10px;position:relative">
+					<%= yield %>
+					  
+			
+
+
+				</div>
+
+			<div class ="col-xs-3 " style= "color: black; margin: 0 auto 10px auto;background-color: red;border: 1px solid #fafafa;border-radius: 15px;position:relative">
+					<h2 style="text-transform: capitalize;">Admission form </h2>
+					<hr style="border-top: 2px dotted yellow"/>
+
+					<%= form_for(@admission) do |f| %>
+					  <% if @admission.errors.any? %>
+					    <div id="error_explanation">
+					      <h2><%= pluralize(@admission.errors.count, "error") %> prohibited this admission from being saved:</h2>
+
+					      <ul>
+					      <% @admission.errors.full_messages.each do |message| %>
+					        <li><%= message %></li>
+					      <% end %>
+					      </ul>
+					    </div>
+					  <% end %>
+
+					  <div class="form-group " >
+					    
+					    <%= f.text_field :sname,:class => 'form-control ',:placeholder => "Enter Student Name",:id => "tf" ,  :required => true  %>
+					  </div>
+					  <div class="form-group ">
+					    
+					    <%= f.text_field :pname ,:class => 'form-control input-sm',:placeholder => "Enter Father's/Mother's Name",:id => "inputsm" ,:id => "tf" ,  :required => true %>
+					  </div>
+					  <div class="form-group ">
+					    
+					    <%= f.text_field :dob, :placeholder => "Enter Your Date Of Birth DD/MM/YY" , :class => "form-control fa fa-calendar" ,:id => "date"%>
+                                
+                
+					  </div>
+					  <div class="form-group ">
+					    
+					    <%= f.text_field :address,:class => 'form-control input-sm',:placeholder => "Enter Address",:id => "inputsm" ,:id => "tf" ,  :required => true  %>
+					  </div>
+					  <div class="form-group ">
+					    
+					    <%= f.text_field :city,:class => 'form-control input-sm',:placeholder => "Enter City",:id => "inputsm" ,:id => "tf" ,  :required => true  %>
+					  </div>
+					  <div class="form-group ">
+					    <%= f.select( :bldgrp, options_for_select([ "Select Blood Group","A+","B+","B-","AB+","AB-","O+","O-"]), {:id => "tf"} , {:class => "form-control"}  )%>
+					    
+					  </div>
+					  <div class="form-group ">
+					    
+					    <%= f.select( :course, options_for_select([ "Select Course Name","Playgroup","Nursery","LKG","UKG"]), {:id => "tf"} , {:class => "form-control"}  )%>
+					  </div>
+					  <div class="form-group ">
+					    
+					    <%= f.text_field :contact,:class => 'form-control input-sm',:placeholder => "Enter Contact No.",:id => "inputsm" ,:id => "tf" ,  :required => true  %>
+					  </div><br>
+					  <div class="form-group">     
+          <div class="control-group">
+            <!-- Button -->
+            <div class="controls span7 text-center" >
+              <button  class="btn btn-success">SUBMIT</button>
+              <%= button_tag "RESET", type: :reset, :class => "btn btn-success"  %>
+            </div>
+          </div>
+        </div>
+					  <br>
+					<% end %>
+
+				</div>
+			</div>
+		
+
+</div><br>
+ <footer style="background:url('assets/about-bg.jpg');margin-top:-20px;margin-bottom:-1px"class="container">
+        <font color="white"> <div class="row">
+
+         
+        <div class="col-lg-4">
+              <p>Copyright &copy; All Rights Reserved</p>
+          </div>
+          <div class="col-lg-offset-1 col-lg-4">
+               <p>
+                   <span class="col-sm-offset-2"><a href="/developers"><font color="white">Developer's Page</font></a>   <br /></span>
+                  Developed @ <a href="http://iips.edu.in/dc"><font color="white">Development Center</font></a>
+                </p>
+
+          </div>
+        </font>
+        </div>
+    </footer> 
+</body>
+</html>

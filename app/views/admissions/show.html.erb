@@ -1,17 +1,23 @@
-<p id="notice"><%= notice %></p>
+<br><br>
+<center>
+<font color="green"><p id="notice"><%= notice %></p></font>
+
+  <div class="panel panel-default" style="margin-left:60px; margin-right:60px; ">
+    <div class="panel-body" >
+    <br><br>
 
 <p>
-  <strong>Sname:</strong>
+  <strong><i>Student Name:</i></strong>
   <%= @admission.sname %>
 </p>
-
+<br>
 <p>
-  <strong>Pname:</strong>
+  <strong>Parent name:</strong>
   <%= @admission.pname %>
 </p>
 
 <p>
-  <strong>Dob:</strong>
+  <strong>Date of birth:</strong>
   <%= @admission.dob %>
 </p>
 
@@ -26,7 +32,7 @@
 </p>
 
 <p>
-  <strong>Bldgrp:</strong>
+  <strong>Bloodgroup:</strong>
   <%= @admission.bldgrp %>
 </p>
 
@@ -40,5 +46,10 @@
   <%= @admission.contact %>
 </p>
 
-<%= link_to 'Edit', edit_admission_path(@admission) %> |
-<%= link_to 'Back', admissions_path %>
+</div>
+</div>
+
+
+<button><%= link_to 'Edit', edit_admission_path(@admission) %> </button> 
+<button><%= link_to 'Back', admision_path %></button> 
+</center>

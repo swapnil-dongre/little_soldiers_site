@@ -9,6 +9,9 @@ end
 def about
 	
 end
+def developers
+end
+
 
 def contact
 end

@@ -6,10 +6,22 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Primary School Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />  
+<script src="js/jquery.min.js"> </script>
+<!--webfonts-->
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic|PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="box.css">
+<script type="text/javascript" src="box.js"></script>
 
-<!--//webfonts-->
 </head>
-<body>
+<body >
   <!--start-home-->
   <!----- start-header---->
   
@@ -17,14 +29,14 @@
           <div class="top-header two"> 
           
             <div class="container">
-            <div class="logo">
-              <a href="/"><h1>LITTLE SOLDIER<span>School</span></h1></a>
+            <div class="logo col-md-4" >
+              <a href="/"><h1 style="text-transform:capitalize">LittleSoldier<span>School</span></h1></a>
             </div>
           <div class="top-menu">
               <span class="menu"> </span>
                 <ul class="cl-effect-16">
                  <ul class="nav nav-pills">
-                 <li role="presentation"><a  href="/#" data-hover="Home">Home</a></li>
+                 <li role="presentation"><a  href="/" data-hover="Home">Home</a></li>
 
 
                 <li role="presentation"><a href="about" data-hover="About">About</a></li>
@@ -53,6 +65,27 @@
 
 
 <%= yield %>
+
+
+    <footer style="background:url('assets/about-bg.jpg');margin-top:-20px;margin-bottom:-1px"class="container">
+        <font color="white"> <div class="row">
+
+         
+        <div class="col-lg-4">
+              <p>Copyright &copy; All Rights Reserved</p>
+          </div>
+          <div class="col-lg-offset-1 col-lg-4">
+               <p>
+                   <span class="col-sm-offset-2"><a href="/developers"><font color="white">Developer's Page</font></a>   <br /></span>
+                  Developed @ <a href="http://iips.edu.in/dc"><font color="white">Development Center</font></a>
+                </p>
+
+          </div>
+        </font>
+        </div>
+    </footer> 
+
+    <!-- /.Footer -->  
 
 </body>
 </html>
