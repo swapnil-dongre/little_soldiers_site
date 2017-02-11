@@ -16,6 +16,7 @@ body a,.grid_1,plan_1,plan_1.one,plan_1.two,i.icon1, i.icon2, i.icon3, i.icon4, 
   -moz-transition:0.5s all;
   -o-transition:0.5s all;
   -ms-transition:0.5s all;
+  
 }
 a:hover{
  text-decoration:none;
@@ -509,7 +510,7 @@ i.award{
 }
 .service-text {
   float: right;
-  background: url('main11.JPG') no-repeat 50px 50px;
+  background: url('main111.png') no-repeat 50px 50px;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1759,7 +1760,7 @@ i.net{
   }
   .service-text {
     float: right;
-     background: url('main11.JPG') no-repeat 0px 0px;
+     background: url('main111.png') no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1789,7 +1790,7 @@ i.net{
   }
   .service-text {
     float: right;
-    background: url('main11.JPG') no-repeat 0px 0px;
+    background: url('main111.png') no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1842,7 +1843,7 @@ i.net{
   }
   .service-text {
     float: right;
-     background: url('main11.JPG') no-repeat 0px 0px;
+     background: url('main111.png') no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1908,7 +1909,7 @@ i.net{
   }
   .service-text {
     float: right;
-    background: url('main11.JPG') no-repeat 0px 0px;
+    background: url('main111.png') no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2092,7 +2093,7 @@ i.net{
   }
   .service-text {
     float: none;
-    background: url('main11.JPG') no-repeat 0px 0px;
+    background: url('main111.png') no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2422,7 +2423,7 @@ i.net{
   }
   .service-text {
     float: none;
-    background: url('main11.JPG') no-repeat 0px 0px;
+    background: url('main111.png') no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2625,7 +2626,7 @@ i.net{
   }
   .service-text {
     float: none;
-    background: url('main11.JPG') no-repeat 0px 0px;
+    background: url('main111.png') no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2962,7 +2963,7 @@ i.net{
     }
     .service-text {
     float: none;
-    background: url('main11.JPG') no-repeat 0px 0px;
+    background: url('main111.png') no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;

@@ -6,14 +6,15 @@
   <%= csrf_meta_tags %>
 
 </head>
-<body style=" background-color: lightblue; max-width:100%;"  >
+
+<body style=" background-color: lightblue; overflow-x: hidden;" >
   
   <div id="home " class="header">
 
           <div class="top-header">
             
   
-            <div class="container ">
+            <div class="container " >
               
             <div class="logo " >
               <a href="/"><h1 style="text-transform:capitalize">Little Soldier <span>School</span></h1></a>
@@ -45,7 +46,7 @@
 
     <div class="col-sm-2" style="float:left;border:1px solid;margin-left:40px;float:left;text-transform: uppercase;text-align:center">Notices</div>
      
-   <div class="col-sm-7" style="position:relative;border:1px solid ;background-color:black;"><marquee style="text-transform: capitalize; color:#39FF14;"><i>parent teacher meeting</t> </marquee></div>
+   <div class="col-sm-7" style="position:relative;border:1px solid ;background-color:black;"><marquee scrollamount=4 style="text-transform: capitalize; color:#39FF14;"><% @notices.each do |n| %><i> <%= n.body %><b style="margin-left:300px"><% end %></marquee></div>
    
    <div class="col-sm-2" style="float:left;border:1px solid;margin-top:-30px:float:left;text-transform: uppercase;text-align:center">Notices</div>
  </div>
@@ -57,9 +58,9 @@ new(function(){});var e=f.$JssorEasing$={Wc:function(a){return-b.cos(a*b.PI)/2+.
 
 </script>
 
-<div class="container">
+<div class="container" id="page-wrapper">
 <div class ="row">
-    <div class="col-sm-6" id="jssor_1" style="position: relative;  top: 0px; left: 0px; right: 1000px; width: 1200px; height: 800px; overflow: hidden; visibility: hidden;border:1px solid black;float:left;margin-left:10px">
+    <div class="col-sm-6" id="jssor_1" style="position: relative;  top: 0px; left: 0px; right: 1000px; width: 1200px; height: 800px; overflow: hidden; visibility: hidden;float:left;margin-left:10px">
     <!-- Loading Screen -->
     <div data-u="loading" style="position: absolute; top: 0px;left:0px ">
     <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
@@ -94,7 +95,7 @@ new(function(){});var e=f.$JssorEasing$={Wc:function(a){return-b.cos(a*b.PI)/2+.
  
   
     <!-- banner Slider starts Here -->
-          <script src="js/responsiveslides.min.js"></script>
+      <!--    <script src="js/responsiveslides.min.js"></script>
        <script>
           // You can also use "$(window).load(function() {"
           $(function () {
@@ -114,41 +115,21 @@ new(function(){});var e=f.$JssorEasing$={Wc:function(a){return-b.cos(a*b.PI)/2+.
             });
       
           });
-        </script>
+        </script>-->
       <!--//End-slider-script-->
 
  <div class="col-sm-6" id="top"  >
         
-        <ul  class="rslide  " id="slider4" >
+        <ul  class="rslide" id="slider4" >
               <li >
                 <div class="slider-top">
                     <h2>Knowledge is Power</h2>
-              <p><font color="grey">Knowledge is power. You can't begin a career, for that matter even a relationship, <br>                unless you know everything there is to know about it  You can't begin a career,<br> for  that matter even a relationship, unless you know everything there is<br> to know about it..</font></p>
+              <p style="text-transform:initial"><font color="#383838 " size="2em">Knowledge is power. You can't begin a career, for that matter even a relationship, <br>                unless you know everything there is to know about it  ....<br>Education is a weapon, whose effect depends on who holds it in his hands and at <br>whom it is aimed ....</font></p>
               <h6><font color="green">Welcoming for every Child</font></h6>
                 </div>
               </li>
 
-              <li>
-              <div class="slider-top">
-                    <h2>Perfect Education</h2>
-             <p><font color="grey">Knowledge is power. You can't begin a career, for that matter even a relationship, <br>                unless you know everything there is to know about it  You can't begin a career,<br> for  that matter even a relationship, unless you know everything there is<br> to know about it..</font></p>
-              <h6><font color="green">Welcoming for every Child</font></h6>
-                </div>
-              </li>
-              <li>
-                 <div class="slider-top">
-                    <h2>School Education</h2>
-              <p><font color="grey">Knowledge is power. You can't begin a career, for that matter even a relationship, <br>                unless you know everything there is to know about it  You can't begin a career,<br> for  that matter even a relationship, unless you know everything there is<br> to know about it..</font></p>
-              <h6><font color="green">Welcoming for every Child</font></h6>
-                </div>
-              </li>
-          <li>
-                 <div class="slider-top">
-                      <h2>Perfect Education</h2>
-              <p><font color="grey">Knowledge is power. You can't begin a career, for that matter even a relationship, <br>                unless you know everything there is to know about it  You can't begin a career,<br> for  that matter even a relationship, unless you know everything there is<br> to know about it..</font></p>
-              <h6><font color="green">Welcoming for every Child</font></h6>
-                </div>
-              </li>
+             
         </ul>
   
 </div>
@@ -160,14 +141,14 @@ new(function(){});var e=f.$JssorEasing$={Wc:function(a){return-b.cos(a*b.PI)/2+.
       <div class="slide-bottom-grids">
          <div class="container">
            <div class="col-md-6 slide-bottom-grid">
-              <h3>Welcome!</h3>
-              <p>Little Soldiers, a pre-school was born with the desire to nurture the child and lay a foundation for a learned society.Let them be LITTLE
-                fill their hearts with LAUGHTER
-                help them grow WINGS, nurture their sense of WONDER,inspire them to BELIEVE, LOVE them like there's no Tomorrow.</p>
+              <h3 style="text-transform:capitalize">Welcome!</h3>
+              <p style="text-transform:initial"><b style="text-transform:initial">Little Soldier</b>, a pre-school was formed with the desire to nurture the child and lay a foundation for a learned society.Let them be <b>Little</b>,
+                fill their hearts with <b>Laughter</b>,
+                help them grow <b>Wings</b>, nurture their sense of <b>Wonder</b>,inspire them to <b>Believe</b>, love them like there's no <b>Tomorrow</b>.</p>
            </div>
            <div class="col-md-6 slide-bottom-grid">
-                 <h3>Our Mission!</h3>
-               <p>To be a leader in Preschool Education and Daycare, provide children “a home-away-from-home“ to give them “best-in-class” environment to optimize their Potential. We at Little Soldier School aims at an all round development of the students in our school.</p>
+                 <h3 style="text-transform:capitalize">Our Mission!</h3>
+               <p style="text-transform:initial">To be a leader in Preschool Education and Daycare, provide children <b>“a home-away-from-home“</b> to give them <b>“best-in-class”</b> environment to optimize their Potential. We at Little Soldier School aim at an all round development of the students in our school.</p>
            </div>
              <div class="clearfix"></div>
          </div>
@@ -181,8 +162,8 @@ new(function(){});var e=f.$JssorEasing$={Wc:function(a){return-b.cos(a*b.PI)/2+.
             <div class="container">
               
               <div class="serve-head">
-                <h3>Our Activities</h3>
-                <h6><i>Our Bestservices for your Kids</i></h6>
+                <h3 style="text-transform:capitalize">Our Activities</h3>
+                <h6><i>Our Best services for your Kids</i></h6>
               </div>
            </div>
             <div class="service-grid">
@@ -226,6 +207,7 @@ new(function(){});var e=f.$JssorEasing$={Wc:function(a){return-b.cos(a*b.PI)/2+.
       </div>
 
 </div><br>
+</div>
   <footer style="background:url('assets/about-bg.jpg');margin-top:-20px;margin-bottom:-1px"class="container">
         <font color="white"> <div class="row">
 
@@ -236,7 +218,7 @@ new(function(){});var e=f.$JssorEasing$={Wc:function(a){return-b.cos(a*b.PI)/2+.
           <div class="col-lg-offset-1 col-lg-4">
                <p>
                    <span class="col-sm-offset-2"><a href="/developers"><font color="white">Developer's Page</font></a>   <br /></span>
-                  Developed @ <a href="http://iips.edu.in/dc"><font color="white">Development Center</font></a>
+                   </font>
                 </p>
 
           </div>
@@ -244,4 +226,5 @@ new(function(){});var e=f.$JssorEasing$={Wc:function(a){return-b.cos(a*b.PI)/2+.
         </div>
     </footer> 
 </body>
+
 </html>

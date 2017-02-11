@@ -50,7 +50,7 @@ class AdmissionsController < ApplicationController
         format.html { redirect_to @admission, notice: 'Admission was successfully created.' }
         format.json { render :show, status: :created, location: @admission }
       else
-        format.html { render :new }
+        format.html { render :admission }
         format.json { render json: @admission.errors, status: :unprocessable_entity }
       end
     end
